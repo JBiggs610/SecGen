@@ -29,7 +29,6 @@ class BashHistoryGenerator < StringGenerator
   def generate
     sudo_array = File.readlines('../../../../../lib/resources/linelists/top_50_sudo_commands')
     command_array = File.readlines('../../../../../lib/resources/linelists/top_90_linux_commands')
-    puts "Password = #{self.password_sample}"
     if self.password_sample != ''
     self.sudo_sample = sudo_array.sample(5)
     self.command_sample = command_array.sample(20)
