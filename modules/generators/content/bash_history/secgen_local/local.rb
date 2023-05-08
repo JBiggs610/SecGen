@@ -18,7 +18,7 @@ class BashHistoryGenerator < StringGenerator
     super + [['--password', GetoptLong::OPTIONAL_ARGUMENT]]
   end
   
-  def proccess_options(opt, arg)
+  def process_options(opt, arg)
     super
     case opt
     when '--password'
